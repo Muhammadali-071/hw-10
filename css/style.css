@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.buttons .btn1,
+.buttons .btn2,
+.buttons .btn3 {
+    width: 150px;
+    height: 50px;
+    background: #5046ff;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .btn1:hover {
+    background-color: #000101;
+    border-radius: 0px;
+}
+
+.buttons .btn2:hover {
+    background-color: transparent;
+    border-radius: 12px;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.buttons .btn3:hover {
+    border-radius: 50px;
+    color: black;
+    border: 2px solid #000000;
+    background: rgb(222, 97, 118);
+}
+
+.box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    background: rgb(185, 184, 184);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    width: 350px;
+    height: 350px;
+    background: rgb(244, 255, 35);
+    color: transparent;
+    border-radius: 50px 0px 50px 0px;
+    border: 2px solid #000000;
+}
+
+.box:hover::after {
+    content: "350x350";
+    color: black;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sun {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #f7f7ff;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.wepro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 230px;
+    height: 209px;
+    padding: 22px 21px;
+    background: #000;
+    color: #fff;
+    font-family: monospace;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.wepro h2 {
+    margin: 16px 0 14px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.wepro p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.wepro:hover {
+    background: #23449b;
+}
+
+.wepro:hover .sun {
+    background: #ff2f70;
+}
+
+.wepro:hover p {
+    color: #ff2f70;
+}
+
+.circles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 20px;
+    gap: 0;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: yellow;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle1:hover {
+    width: 150px;
+    height: 150px;
+    background: #000000;
+    color: transparent;
+}
+
+.circle2:hover {
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    color: transparent;
+}
+
+.circle3:hover {
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    color: transparent;
+}
+
+.circle1:hover::after {
+    content: "150x150";
+    inset: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
+
+.circle2:hover::after {
+    content: "50x50";
+    inset: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
+
+.circle3:hover::after {
+    content: "100x100";
+    inset: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
